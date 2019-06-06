@@ -234,6 +234,8 @@ main
         padding: 5px 15px
         display: flex
         align-items: center
+        +laptop_sm
+          border: unset !important
         .service-icon
           img
             margin-right: 15px
@@ -632,7 +634,12 @@ main
       border-right: 1px solid #06038d
       +laptop_sm
         border: unset !important
+        margin: 15px 0
     .each-add-info
+      +laptop_sm
+        background: #fff
+        padding: 15px
+        height: 100%
       h1
         font-family: 'Titillium Web', sans-serif   
         font-size: 24px
@@ -644,6 +651,7 @@ main
         font-size: 16px
         text-transform: capitalize
         color: #06038d
+        text-align: justify
         a
           text-decoration: none
           color: #06038d

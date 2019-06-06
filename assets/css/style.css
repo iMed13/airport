@@ -348,6 +348,12 @@ main .offered-services .offered-service-menu .each-service {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  main .offered-services .offered-service-menu .each-service {
+    border: unset !important;
+  }
+}
+
 main .offered-services .offered-service-menu .each-service .service-icon img {
   margin-right: 15px;
   width: 40px;
@@ -971,6 +977,15 @@ main .additional-info article {
 @media (max-width: 1000px) {
   main .additional-info article {
     border: unset !important;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  main .additional-info .each-add-info {
+    background: #fff;
+    padding: 15px;
+    height: 100%;
   }
 }
 
@@ -987,6 +1002,7 @@ main .additional-info .each-add-info h3 {
   font-size: 16px;
   text-transform: capitalize;
   color: #06038d;
+  text-align: justify;
 }
 
 main .additional-info .each-add-info h3 a {
