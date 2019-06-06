@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEORGE.GE</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/owl/owlcarousel/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9cced2804a.js"></script>
+    <style>
+        @keyframes mymove {
+            0% {
+                transform: translateY(60px);
+                visibility: hidden;
+            }
+
+            50% {
+                visibility: visible !important;
+            }
+
+            100% {
+                transform: translateY(0px) !important;
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                left: -10%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="container-fluid header">
+            <nav class="container header-nav">
+                <section class="header-logo">
+                    <img src="assets/img/logo.png" alt="">
+                </section>
+                <section class="header-menu">
+                    <ul class="header-menu-list">
+                        <li><a href="">plan</a></li>
+                        <li><a href="">information</a></li>
+                        <li><a href="">check in - bookings</a></li>
+                        <li><a href="">sing in</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </section>
+        <section class="container-fluid header-slider">
+
+            <div class="row">
+                <div class="booking-form col-lg-6">
+                    <form>
+                        <div class="form-button">
+                            <button class="form-active"><i class="fas fa-plane-departure"></i></button>
+                            <button><i class="fas fa-bed"></i></button>
+                            <button><i class="fas fa-car"></i></button>
+                        </div>
+                        <div class="form-btn-content form-active">
+                            <div class="booking-trip-way">
+                                <input type="text" class="form-input origin" placeholder="Origin">
+                                <input type="text" class="form-input destination" placeholder="Destination">
+                            </div>
+                            <div class="booking-trip-date">
+                                <div>
+                                    <label for="">Departure</label>
+                                    <input type="date" id="departureDate" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="">Return</label>
+                                    <input type="date" id="returnDate" class="form-input">
+                                </div>
+                            </div>
+                            <div class="booking-trip-passengers">
+                                <div>
+                                    <div class="input-group mb-2 ">
+                                        <input type="number" class="form-input" placeholder="adults">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-restroom"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2 ">
+                                        <input type="number" class="form-input" placeholder="children">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-child"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-2 ">
+                                        <input type="number" class="form-input" placeholder="infants">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fas fa-baby"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="form-search">Search</button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 pd-none">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item" style="background-image: url(assets/img/wallpaper_2_3ead864a.jpg)">
+
+                            <div class="row blah">
+                                <div class="col-lg-4"></div>
+
+                                <div class="col-lg-8 slider-right">
+                                    <div class="slider-text-content">
+                                        <h1>Fly me to the moon</h1>
+                                        <h3>That one is slug??</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(assets/img/wallpaper-heinemann_9d01ec0c.jpg)">
+                            <div class="row blah">
+                                <div class="col-lg-4"></div>
+
+                                <div class="col-lg-8 slider-right">
+                                    <div class="slider-text-content">
+                                        <h1>Fly me to the moon</h1>
+                                        <h3>That one is slug??</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item"
+                            style="background-image: url(assets/img/br19wizwa06_brexit-visual-ok_6c136766.jpg)">
+                            <div class="row blah">
+                                <div class="col-lg-4"></div>
+
+                                <div class="col-lg-8 slider-right">
+                                    <div class="slider-text-content">
+                                        <h1>Fly me to the moon</h1>
+                                        <h3>That one is slug??</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="header-devider">
+            <span> <a href="#"><i class="fas fa-exclamation-triangle"></i> Attention passengers travelling to/from
+                    Eindhoven until 5 July 2019-> Click here for more information </a></span>
+
+        </section>
+    </header>
+    <main class="container-fluid">
+        <!-- -------offered services------------ -->
+        <section class="container offered-services">
+            <h1>Explore your travel opportunities with GEORG.GE!</h1>
+            <section class="offered-service-menu row ">
+                <div class="each-service col-xl-3 col-lg-6 col-md-12">
+                    <div class="service-icon">
+                        <img src="assets/img/world.png" alt="">
+                    </div>
+                    <div class="service-text-content">
+                        <div class="service-title">Trip planner</div>
+                        <div class="service-slug">Discover your new favourite place</div>
+                    </div>
+                </div>
+                <div class="each-service col-xl-3 col-lg-6 col-md-12">
+                    <div class="service-icon">
+                        <img src="assets/img/pay-per-click.png" alt="">
+                    </div>
+                    <div class="service-text-content">
+                        <div class="service-title">Fare Finder</div>
+                        <div class="service-slug">Discover your new favourite place</div>
+                    </div>
+                </div>
+
+                <div class="each-service col-xl-3 col-lg-6 col-md-12">
+                    <div class="service-icon">
+                        <img src="assets/img/maps-and-flags.png" alt="">
+                    </div>
+                    <div class="service-text-content">
+                        <div class="service-title">Destination Map</div>
+                        <div class="service-slug">Discover your new favourite place</div>
+                    </div>
+                </div>
+                <div class="each-service col-xl-3 col-lg-6 col-md-12">
+                    <div class="service-icon">
+                        <img src="assets/img/map.png" alt="">
+                    </div>
+                    <div class="service-text-content">
+                        <div class="service-title">Destionations</div>
+                        <div class="service-slug">Discover our expanding network</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- ---------Flights Offers----------- -->
+        <section class="flight-offers">
+            <section class="container">
+                <h1>Cheap flight offers**</h1>
+                <div class="owl-carousel owl-flight-offers">
+                    <div class="item">
+                        <div class="each-fl-offer">
+                            <div class="offer-image">
+                                <img src="assets/img/warsaw.jpg" alt="">
+                            </div>
+                            <div class="offer-country"><img src="assets/img/poland.png" alt="poland" title="poland">
+                            </div>
+                            <div class="offer-text-content">
+                                <div class="content-title">Warsaw</div>
+                                <div class="content-description"> from Doncaster/Sheffield** </div>
+                                <div class="content-others">
+                                    <div class="content-events">
+                                        <i class="fas fa-city"></i>
+                                        <i class="fas fa-basketball-ball"></i>
+                                        <i class="fas fa-glass-martini-alt"></i>
+                                        <i class="fas fa-swimming-pool"></i>
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <i class="fas fa-campground"></i>
+                                    </div>
+                                    <div class="content-price">230.5</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="each-fl-offer">
+                            <div class="offer-image">
+                                <img src="assets/img/larnaca.jpg" alt="">
+                            </div>
+                            <div class="offer-country"><img src="assets/img/greece.png" alt="greece" title="greece">
+                            </div>
+                            <div class="offer-text-content">
+                                <div class="content-title">Grecce (larnaca)</div>
+                                <div class="content-description"> from Doncaster/Sheffield** </div>
+                                <div class="content-others">
+                                    <div class="content-events">
+                                        <i class="fas fa-city"></i>
+                                        <i class="fas fa-basketball-ball"></i>
+                                        <i class="fas fa-glass-martini-alt"></i>
+                                        <i class="fas fa-swimming-pool"></i>
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <i class="fas fa-campground"></i>
+                                    </div>
+                                    <div class="content-price">230.5</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="each-fl-offer">
+                            <div class="offer-image">
+                                <img src="assets/img/Gdansk.jpg" alt="">
+                            </div>
+                            <div class="offer-country"><img src="assets/img/poland.png" alt="poland" title="poland">
+                            </div>
+                            <div class="offer-text-content">
+                                <div class="content-title">Gdansk</div>
+                                <div class="content-description"> from Doncaster/Sheffield** </div>
+                                <div class="content-others">
+                                    <div class="content-events">
+                                        <i class="fas fa-city"></i>
+                                        <i class="fas fa-basketball-ball"></i>
+                                        <i class="fas fa-glass-martini-alt"></i>
+                                        <i class="fas fa-swimming-pool"></i>
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <i class="fas fa-campground"></i>
+                                    </div>
+                                    <div class="content-price">230.5</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="each-fl-offer">
+                            <div class="offer-image">
+                                <img src="assets/img/Cluj-Napoca.jpg" alt="">
+                            </div>
+                            <div class="offer-country"><img src="assets/img/romania.png" alt="romania" title="romania">
+                            </div>
+                            <div class="offer-text-content">
+                                <div class="content-title">Cluj-Napoca</div>
+                                <div class="content-description"> from Billund** </div>
+                                <div class="content-others">
+                                    <div class="content-events">
+                                        <i class="fas fa-city"></i>
+                                        <i class="fas fa-basketball-ball"></i>
+                                        <i class="fas fa-glass-martini-alt"></i>
+                                        <i class="fas fa-swimming-pool"></i>
+                                        <i class="fas fa-umbrella-beach"></i>
+                                        <i class="fas fa-campground"></i>
+                                    </div>
+                                    <div class="content-price">230.5</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <p class="warning">***Flights on and after 1 November 2018: One way price including taxes,
+                    administration and other non-optional charges and one carry-on bag (max: 40x30x20cm). Trolley bag
+                    and each piece of checked-in baggage is subject to additional fees. The price applies only to
+                    bookings made on GEORGE.GE and the GEORGE mobile app. Number of seats at indicated prices are
+                    limited.</p>
+            </section>
+
+            <!-- ---------Airport Offers----------- -->
+            <section class="airport-offers">
+                <section class="container">
+                    <h1>Hand pick the offers you like best</h1>
+                    <section class="row">
+                        <article class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="each-air-offer">
+                                <img src="assets/img/bus.jpg" alt="">
+                                <div class="air-offer-content ">
+                                    <div class="offer-title">AIRPORT TRANSFER</div>
+                                    <div class="offer-slug">More than 100 routes, prices starting from €2/person.</div>
+                                </div>
+                                <button>
+                                    <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="each-air-offer">
+                                <img src="assets/img/parking.jpg" alt="">
+                                <div class="air-offer-content ">
+                                    <div class="offer-title">AIRPORT PARKING</div>
+                                    <div class="offer-slug">Save up to 60% - reserve it now!</div>
+                                </div>
+                                <button>
+                                    <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="each-air-offer">
+                                <img src="assets/img/Voucher.jpg" alt="">
+                                <div class="air-offer-content ">
+                                    <div class="offer-title">GIFT VOUCHER</div>
+                                    <div class="offer-slug">Surprise your loved ones with a gift they will never forget!
+                                    </div>
+                                </div>
+                                <button>
+                                    <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="each-air-offer">
+                                <img src="assets/img/atraction.jpg" alt="">
+                                <div class="air-offer-content ">
+                                    <div class="offer-title">Book tours and attraction tickets now</div>
+                                    <div class="offer-slug">Skip the long lines. Best price guaranteed.</div>
+                                </div>
+                                <button>
+                                    <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
+                                </button>
+                            </div>
+                        </article>
+
+                    </section>
+                </section>
+            </section>
+            <!-- ---------Flights Package----------- -->
+            <section class="flight-package">
+                <section class="container">
+                    <h1>Welcome to the world of opportunity</h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="each-package">
+                                <div class="package-image"><img src="assets/img/touristgirl.jpg" alt=""></div>
+                            </div>
+                            <div class="package-content">
+                                <div class="package-title">Basic</div>
+                                <div class="package-text">
+                                    <div class="package-slug"> TRAVEL LIGHT </div>
+                                    <div class="package-contain">
+                                        <i class="fas fa-suitcase-rolling"></i>
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <button class="package-btn"><a href="#">find out more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="each-package">
+                                <div class="package-image"><img src="assets/img/touristcouple.jpg" alt=""></div>
+                                <div class="package-content">
+                                    <div class="package-title">Standart</div>
+                                    <div class="package-text">
+                                        <div class="package-slug"> PACK & SAVE </div>
+                                        <div class="package-contain">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <i class="fas fa-suitcase"></i>
+                                            <i class="fas fa-suitcase-rolling"></i>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <i class="fas fa-chair"></i>
+                                            <i class="far fa-calendar-check"></i>
+                                            <i class="fas fa-calendar-day"></i>
+                                        </div>
+                                        <div class="package-info">
+                                            <i class="fas fa-users"></i>
+                                            <div class="info-text">
+                                                <h4>Travelling with kids?</h4>
+                                                <h3>'Standart' Family</h3>
+                                                <p>With children you get a better price</p>
+                                            </div>
+                                        </div>
+                                        <button class="package-btn"><a href="#">find out more</a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="each-package">
+                                <div class="package-image"><img src="assets/img/busineman.jpg" alt=""></div>
+                                <div class="package-content">
+                                    <div class="package-title">Plus</div>
+                                    <div class="package-text">
+                                        <div class="package-slug"> ALL IN & FULL FLEX </div>
+                                        <div class="package-contain">
+                                            <i class="fas fa-shopping-bag"></i>
+                                            <i class="fas fa-suitcase"></i>
+                                            <i class="fas fa-suitcase-rolling"></i>
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <i class="fas fa-chair"></i>
+                                            <i class="far fa-calendar-check"></i>
+                                            <i class="fas fa-calendar-day"></i>
+                                            <i class="fas fa-credit-card"></i>
+                                            <i class="fas fa-id-badge"></i>
+                                        </div>
+                                        <div class="package-info">
+                                            <i class="fas fa-users"></i>
+                                            <div class="info-text">
+                                                <h4>Travelling with kids?</h4>
+                                                <h3>'Plus' Family</h3>
+                                                <p>With children you get a better price</p>
+                                            </div>
+                                        </div>
+                                        <button class="package-btn"><a href="#">find out more</a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <p class="warning">*Spend at least € 50 at Heinemann Duty Free and get a € 4.50 voucher for the
+                        GEORGE Café on board. Or spend € 75 for a € 7.50 voucher.
+                        The minimum purchase excludes duty-paid cigarettes and tobacco products. The coupon is valid on
+                        flights departing from Vienna Airport, until 2 a.m. on the following day. For more information
+                        visit</p>
+                </section>
+
+            </section>
+            <!-- ----------Additional Information----------------- -->
+
+            <section class="additional-info">
+                <section class="container">
+                    <section class="row additional-row">
+                        <article class="col-lg-4">
+                            <div class="each-add-info">
+                                <h1>Need help?</h1>
+                                <h3><a href="#">Browse our FAQ to get instant answer</a></h3>
+                            </div>
+                        </article>
+                        <article class="col-lg-4">
+                            <div class="each-add-info">
+                                <h1>On the move?</h1>
+                                <h3>Booking a cheap Wizz Air flight ticket has never been so easy as with our FREE
+                                    mobile
+                                    application.</h3>
+                            </div>
+                        </article>
+                        <article class="col-lg-4">
+                            <div class="each-add-info">
+                                <h1>Never miss a good deal</h1>
+                                <h3>Subscribe to our newsletter and be the first to know about new routes and special
+                                    offers.</h3>
+                                <button class="subscribe-btn">subscribe</button>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <footer class="container-fluid">
+        <section class="container">
+            <span>GEORGE Air Ltd. All rights reserved. ©2018-2109</span>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- javascript -->
+    <script src="assets/owl/vendors/jquery.min.js"></script>
+    <script src="assets/owl/owlcarousel/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('.owl-theme');
+            owl.owlCarousel({
+                margin: 10,
+                autoPlay: 100,
+                dots: true,
+                nav: false,
+                loop: true,
+                items: 1
+            });
+            $('.owl-flight-offers').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- vendors -->
+    <script src="assets/owl/vendors/highlight.js"></script>
+    <script src="assets/owl/js/app.js"></script>
+</body>
+
+</html>
