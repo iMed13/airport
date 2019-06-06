@@ -269,18 +269,28 @@ header
               padding-bottom: 15px
               display: flex
               justify-content: space-between
+              +mobile
+                flex-direction: column
               input
                 flex-grow: 1
                 width: unset !important
+                +mobile
+                  width: 100% !important
+
+                
 
             .booking-trip-way
               padding-bottom: 15px
               display: flex
               justify-content: center
               padding-bottom: 15px
+              +tablet
+                flex-direction: column
               input
                 flex-grow: 1
                 width: unset !important
+                +tablet
+                  margin: 10px 0
             .form-input
               display: block
               width: calc(100% - 35px)

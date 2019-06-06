@@ -11,7 +11,7 @@ $(document).ready(function(){
            
         $(".header-menu-list").toggleClass("active-menu-resp");
         $(".header-hamburg").children().toggleClass("rotate-hamburg");
-       }, 1000)
+       }, 500)
     })
 
 })
@@ -24,8 +24,7 @@ function scrollFunction() {
     $(".header-hamburg").children().removeClass("x-hamburg");
     setTimeout(function(){   
         $(".header").addClass("header-resp");
-       }, "slow")
-    console.log("scroll down");
+       }, "slow");
   } else {
       
     $(".header").removeClass("header-resp");
