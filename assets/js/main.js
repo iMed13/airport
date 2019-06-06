@@ -20,8 +20,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     $(".header-menu").children().removeClass("active-menu-resp");
-    $(".header-hamburg").children().toggleClass("rotate-hamburg");
-    $(".header-hamburg").children().toggleClass("x-hamburg");
+    $(".header-hamburg").children().removeClass("rotate-hamburg");
+    $(".header-hamburg").children().removeClass("x-hamburg");
     console.log("scroll down");
   } else {
       
