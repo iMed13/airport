@@ -68,7 +68,12 @@ header
       a
         text-decoration: none
         color: #fdd12c
-        font-family: 'Josefin Sans', sans-serif 
+        font-family: 'Josefin Sans', sans-serif
+  .header-resp
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 999
   .header
       background: #06038d
       .header-nav
@@ -79,6 +84,7 @@ header
           .header-logo
               img
                   width: 50px
+          
           .header-menu
             .header-hamburg
               width: 40px
@@ -86,6 +92,8 @@ header
               display: none
               justify-content: center
               align-items: center
+              position: relative
+              z-index: 99
               &:hover
                 cursor: pointer
               +tablet_lg
@@ -127,12 +135,35 @@ header
                   border-radius: 5px
                   background: #fff
                   transition: all 0.3s
+            .active-menu-resp
+              left: 0 !important
+              display: flex !important
+              z-index: 98
+              justify-content: center
+              flex-direction: column
+              li
+                min-width: 200px
+                background: #fff
+                margin: 5px 0
+                a
+                  color: rgba(0,0,0,0.9) !important
+                  padding: 10px 15px !important
+                  display: block
+                  width: 100%
+
             .header-menu-list
                 margin: unset !important
+                transition: all 0.5s
                 display: flex
                 align-items: center
                 +laptop_sm
-                  display: none 
+                  display: none
+                  position: fixed
+                  left: -100%
+                  top: 0
+                  background: rgba(0,0,0,0.9)
+                  width: 100%
+                  height: 100%
                 li
                     list-style-type: none
                     a
