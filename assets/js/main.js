@@ -5,5 +5,10 @@ $(document).ready(function(){
         $(this).addClass("form-active");
     });
 
-
+    $(".header-hamburg").click(function(){
+       $(this).children().toggleClass("x-hamburg");
+       setTimeout(function(){
+        $(".header-hamburg").children().toggleClass("rotate-hamburg");
+       }, 1000)
+    })
 })

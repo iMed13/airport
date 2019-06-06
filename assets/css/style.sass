@@ -5,6 +5,7 @@ $middle: 1900px
 $laptop_lg: 1450px
 $laptop_md: 1250px
 $laptop_sm: 1000px
+$tablet_lg: 991px
 $tablet: 767px
 $mobile: 500px
 $iphone5: 330px
@@ -23,16 +24,21 @@ $iphone5: 330px
 =laptop_sm
   @media (max-width: #{$laptop_sm})
     @content
+
+
 =tablet
   @media (max-width: #{$tablet})
     @content
+
 =mobile
   @media (max-width: #{$mobile})
     @content
 =iphone5
   @media (max-width: #{$iphone5})
     @content
-
+=tablet_lg
+  @media (max-width: #{$tablet_lg})
+    @content
 //---------------------------------------------------------------
 //---------------------------------------------------------------
 //---------------------------------------------------------------
@@ -74,21 +80,77 @@ header
               img
                   width: 50px
           .header-menu
-              .header-menu-list
-                  margin: unset !important
-                  display: flex
-                  align-items: center
-                  li
-                      list-style-type: none
-                      a
-                          color: #fff
-                          padding: 0 15px
-                          text-decoration: none
+            .header-hamburg
+              width: 40px
+              height: 24px
+              display: none
+              justify-content: center
+              align-items: center
+              &:hover
+                cursor: pointer
+              +tablet_lg
+                display: flex !important
+              .rotate-hamburg
+                transform: rotate(45deg)  !important
+                &:after
+                  transform: rotate(-90deg)  !important
+                &:before
+                  transform: rotate(90deg)  !important
+              .x-hamburg
+                &:after
+                  top: 0 !important
+                &:before
+                  top: 0 !important
+              .hamburg-line
+                width: 100%
+                border-radius: 5px
+                height: 3px
+                position: relative
+                background: #fff
+                &:after
+                  content: ""
+                  position: absolute
+                  left: 0
+                  top: 10px
+                  width: 100%
+                  height: 3px
+                  border-radius: 5px
+                  background: #fff
+                  transition: all 0.5s
+                &:before
+                  content: ""
+                  position: absolute
+                  left: 0
+                  top: -10px
+                  width: 100%
+                  height: 3px
+                  border-radius: 5px
+                  background: #fff
+                  transition: all 0.3s
+            .header-menu-list
+                margin: unset !important
+                display: flex
+                align-items: center
+                +laptop_sm
+                  display: none 
+                li
+                    list-style-type: none
+                    a
+                      color: #fff
+                      padding: 0 15px
+                      text-decoration: none
+                      text-transform: uppercase
+                      font-family: 'Josefin Sans', sans-serif 
+                      font-size: 12px
+                      transition: all 0.2s
+                      &:hover
+                        text-shadow: 2px 2px #FF0000
+                          
 
   .header-slider
       min-height: 70vh
       position: relative
-     
+      
       .owl-dots
         position: absolute
         bottom: 50px
@@ -97,6 +159,9 @@ header
         display: flex
         flex-direction: column
         justify-content: center
+        +tablet_lg
+          left: unset 
+          right: 30px 
         button  
           margin: 5px
           border-radius: 100%
@@ -129,11 +194,15 @@ header
           display: flex
           justify-content: center
           background: #fff
+          +tablet
+            flex-direction: column
           .form-active
             background: #f2f2f2 !important
           .form-button
             display: flex
             flex-direction: column
+            +tablet
+              flex-direction: row
             button
               flex: 1
               padding: 15px
