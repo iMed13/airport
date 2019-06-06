@@ -1116,6 +1116,10 @@ main .flight-package .package-content .package-text .package-btn {
   border: none;
 }
 
+main .flight-package .package-content .package-text .package-btn:hover a {
+  text-shadow: 2.5px 2.5px #FF0000;
+}
+
 main .flight-package .package-content .package-text .package-btn a {
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
