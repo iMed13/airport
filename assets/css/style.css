@@ -869,10 +869,22 @@ main .flight-package .package-content .package-text .package-contain {
   color: #c6007e;
 }
 
+@media (max-width: 500px) {
+  main .flight-package .package-content .package-text .package-contain {
+    padding: 20px 30px;
+  }
+}
+
 main .flight-package .package-content .package-text .package-contain .fas, main .flight-package .package-content .package-text .package-contain .far {
   font-size: 20px;
   color: #06038d;
   margin: 15px;
+}
+
+@media (max-width: 500px) {
+  main .flight-package .package-content .package-text .package-contain .fas, main .flight-package .package-content .package-text .package-contain .far {
+    margin: 10px  !important;
+  }
 }
 
 main .flight-package .package-content .package-text .package-btn {
