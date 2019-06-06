@@ -234,7 +234,7 @@ header .header-slider {
 
 header .header-slider .owl-dots {
   position: absolute;
-  bottom: 50px;
+  bottom: 50%;
   left: 30px;
   z-index: 99999;
   display: -webkit-box;
@@ -252,6 +252,8 @@ header .header-slider .owl-dots {
 @media (max-width: 991px) {
   header .header-slider .owl-dots {
     left: unset;
+    bottom: unset;
+    top: 50%;
     right: 30px;
   }
 }
@@ -263,6 +265,12 @@ header .header-slider .owl-dots button {
   width: 10px;
   height: 10px;
   outline: none;
+}
+
+@media (max-width: 991px) {
+  header .header-slider .owl-dots button {
+    margin: 10px 5px;
+  }
 }
 
 header .header-slider .owl-dots button:hover {
@@ -314,6 +322,7 @@ header .header-slider .booking-form form {
 
 @media (max-width: 767px) {
   header .header-slider .booking-form form {
+    width: 100% !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -352,6 +361,10 @@ header .header-slider .booking-form form .form-button button {
   background: #e2e2e2;
   outline: none;
   border: none;
+}
+
+header .header-slider .booking-form form .form-button button .fas {
+  color: #06038d;
 }
 
 header .header-slider .booking-form form .form-button button:hover {
@@ -495,6 +508,12 @@ header .header-slider .pd-none .item .slider-text-content {
   position: relative;
   padding: 15px;
   background: rgba(198, 0, 126, 0.9);
+}
+
+@media (max-width: 500px) {
+  header .header-slider .pd-none .item .slider-text-content {
+    width: 100%;
+  }
 }
 
 header .header-slider .pd-none .item .slider-text-content h1 {
