@@ -7,10 +7,10 @@ $(document).ready(function(){
 
     $(".header-hamburg").click(function(){
        $(this).children().toggleClass("x-hamburg");
+       $(".header-hamburg").children().toggleClass("rotate-hamburg");
        setTimeout(function(){
            
         $(".header-menu-list").toggleClass("active-menu-resp");
-        $(".header-hamburg").children().toggleClass("rotate-hamburg");
        }, 500)
     })
 
