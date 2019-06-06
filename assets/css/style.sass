@@ -69,13 +69,14 @@ header
         text-decoration: none
         color: #fdd12c
         font-family: 'Josefin Sans', sans-serif
+  .header-resp
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 999
   .header
       background: #06038d
-      +tablet_lg
-        position: fixed
-        left: 0
-        top: 0
-        z-index: 999
+      transition: all 0.5s
       .header-nav
           display: flex
           justify-content: space-between

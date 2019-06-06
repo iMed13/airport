@@ -18,13 +18,17 @@ $(document).ready(function(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     $(".header-menu").children().removeClass("active-menu-resp");
     $(".header-hamburg").children().removeClass("rotate-hamburg");
     $(".header-hamburg").children().removeClass("x-hamburg");
+    setTimeout(function(){   
+        $(".header").addClass("header-resp");
+       }, "slow")
     console.log("scroll down");
   } else {
       
+    $(".header").removeClass("header-resp");
     console.log("scroll up");
   }
 }
