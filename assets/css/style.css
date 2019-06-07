@@ -135,19 +135,19 @@
   text-decoration: none;
 }
 
-::-webkit-input-placeholder, button {
+::-webkit-input-placeholder, button, label {
   font-family: 'Titillium Web', bebas-neue, sans-serif !important;
 }
 
-:-ms-input-placeholder, button {
+:-ms-input-placeholder, button, label {
   font-family: 'Titillium Web', bebas-neue, sans-serif !important;
 }
 
-::-ms-input-placeholder, button {
+::-ms-input-placeholder, button, label {
   font-family: 'Titillium Web', bebas-neue, sans-serif !important;
 }
 
-::placeholder, button {
+::placeholder, button, label {
   font-family: 'Titillium Web', bebas-neue, sans-serif !important;
 }
 
@@ -243,7 +243,7 @@ header .popup .popup-content .load-content {
 }
 
 header .popup .popup-content .load-content p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: bpg_nino_mtavruli_bold, 'Josefin Sans',ashesha, sans-serif;
   font-size: 30px;
   text-transform: capitalize;
   color: #06038d;
@@ -772,7 +772,7 @@ main .offered-services h1 {
   font-size: 24px;
   font-weight: 300;
   color: #06038d;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold, 'Abril Fatface', cursive;
 }
 
 main .offered-services .offered-service-menu {
@@ -814,7 +814,7 @@ main .offered-services .offered-service-menu .each-service .service-title {
   color: #c6007e;
   font-size: 18px;
   letter-spacing: 2px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold, 'Abril Fatface', cursive;
 }
 
 main .offered-services .offered-service-menu .each-service .service-slug {
@@ -917,7 +917,7 @@ main .airport-offers .each-air-offer .air-offer-content .offer-title {
   font-size: 18px;
   letter-spacing: 2px;
   font-size: 16px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold, 'Abril Fatface', cursive;
 }
 
 main .airport-offers .each-air-offer .air-offer-content .offer-slug {
@@ -942,7 +942,7 @@ main .flight-offers h1 {
   font-weight: 300;
   color: #06038d;
   padding: 15px 0 50px 0;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold, 'Abril Fatface', cursive;
 }
 
 main .flight-offers .owl-flight-offers {
@@ -1074,7 +1074,7 @@ main .flight-offers .owl-flight-offers .item .each-fl-offer .offer-text-content 
   font-size: 17px;
   color: #c6007e;
   letter-spacing: 2px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold,   'Abril Fatface', cursive;
 }
 
 main .flight-offers .owl-flight-offers .item .each-fl-offer .offer-text-content .content-description {
@@ -1187,7 +1187,7 @@ main .flight-package h1 {
   font-size: 24px;
   font-weight: 300;
   color: #06038d;
-  font-family: 'Abril Fatface', cursive;
+  font-family: bpg_nino_mtavruli_bold,  'Abril Fatface', cursive;
   padding: 15px 0 50px 0;
 }
 
@@ -1312,7 +1312,7 @@ main .flight-package .package-content .package-text .package-slug {
 }
 
 main .flight-package .package-content .package-text .package-contain {
-  padding: 30px 60px;
+  padding: 30px 30px 15px 30px;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1407,7 +1407,7 @@ main .flight-package .package-content .package-text .package-info .info-text {
 }
 
 main .flight-package .package-content .package-text .package-info .info-text h4 {
-  font-family: 'Titillium Web',bebas-neue, sans-serif;
+  font-family: 'Titillium Web',bpg_nino_mtavruli_bold,  sans-serif;
   font-size: 13px;
   color: #040267;
   margin: unset !important;
@@ -1421,7 +1421,7 @@ main .flight-package .package-content .package-text .package-info .info-text h3 
 }
 
 main .flight-package .package-content .package-text .package-info .info-text p {
-  font-family: 'Titillium Web', bebas-neue,sans-serif;
+  font-family: 'Titillium Web', bpg_nino_mtavruli_bold, sans-serif;
   font-size: 13px;
   margin: unset !important;
   color: #040267;
@@ -1467,7 +1467,7 @@ main .additional-info article {
 }
 
 main .additional-info .each-add-info h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: bpg_nino_mtavruli_bold,  'Titillium Web', sans-serif;
   font-size: 24px;
   color: #c6007e;
   text-transform: uppercase;
