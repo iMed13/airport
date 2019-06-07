@@ -169,6 +169,7 @@ header .popup {
 header .popup .popup-content {
   max-width: 500px;
   border-radius: 15px;
+  padding: 30px;
   background: #fff;
 }
 
@@ -191,6 +192,7 @@ header .popup .popup-content .exit-popup .fas {
   font-size: 25px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: #06038d;
 }
 
 header .popup .popup-content .exit-popup .fas:hover {
@@ -209,6 +211,13 @@ header .popup .popup-content .load-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .popup .popup-content .load-content p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #06038d;
 }
 
 header .header-devider {
