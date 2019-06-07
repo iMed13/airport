@@ -1,4 +1,5 @@
 
+@import "loader"
 // MIX INS
 $large: 2500px
 $middle: 1900px
@@ -53,6 +54,41 @@ $iphone5: 330px
   max-width: 1400px !important
 header 
   overflow: hidden
+  .active-popup
+    top: 0 !important
+  .popup
+    z-index: 99999
+    position: fixed
+    left: 0
+    width: 100%
+    height: 100vh
+    top: -100%
+    background: rgba(0,0,0,0.6)
+    display: flex
+    justify-content: center
+    align-items: center
+    .popup-content
+      max-width: 500px
+      border-radius: 15px
+      background: #fff
+      .exit-popup
+        width: 100%
+        padding: 15px 30px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        .fas
+          cursor: pointer
+          font-size: 25px
+          transition: all 0.5s
+          &:hover
+            transform: rotate(360deg)
+      .load-content
+        
+        padding: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
   .header-devider
     background: #48b2df
     padding: 30px

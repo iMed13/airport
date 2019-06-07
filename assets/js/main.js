@@ -1,4 +1,11 @@
 $(document).ready(function(){
+  $("button, a").click(function(event){
+    event.preventDefault();
+    $(".popup").addClass("active-popup");
+  });
+  $(".exit-popup").click(function(){
+    $(".popup").removeClass("active-popup");
+  });
     $(".form-button").find("button").click(function(event){
         event.preventDefault();
         $(this).siblings().removeClass("form-active");
