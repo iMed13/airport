@@ -154,6 +154,8 @@ header .popup {
   width: 100%;
   height: 100vh;
   top: -100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   background: rgba(0, 0, 0, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,11 +168,22 @@ header .popup {
           align-items: center;
 }
 
+header .popup .active-popup-content {
+  -webkit-transform: scale(1.3) !important;
+          transform: scale(1.3) !important;
+  visibility: visible !important;
+}
+
 header .popup .popup-content {
   max-width: 500px;
   border-radius: 15px;
   padding: 30px;
   background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  visibility: hidden;
 }
 
 header .popup .popup-content .exit-popup {

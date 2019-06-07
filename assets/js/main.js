@@ -2,9 +2,17 @@ $(document).ready(function(){
   $("button, a").click(function(event){
     event.preventDefault();
     $(".popup").addClass("active-popup");
+    setTimeout(function(){
+      $(".popup-content").addClass("active-popup-content")
+    }, 600)
   });
   $(".exit-popup").click(function(){
-    $(".popup").removeClass("active-popup");
+    
+      $(".popup-content").removeClass("active-popup-content")
+    setTimeout(function(){
+      $(".popup").removeClass("active-popup");
+    }, 300)
+    
   });
     $(".form-button").find("button").click(function(event){
         event.preventDefault();
