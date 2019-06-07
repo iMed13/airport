@@ -135,6 +135,22 @@
   text-decoration: none;
 }
 
+::-webkit-input-placeholder, button {
+  font-family: 'Titillium Web', bebas-neue, sans-serif !important;
+}
+
+:-ms-input-placeholder, button {
+  font-family: 'Titillium Web', bebas-neue, sans-serif !important;
+}
+
+::-ms-input-placeholder, button {
+  font-family: 'Titillium Web', bebas-neue, sans-serif !important;
+}
+
+::placeholder, button {
+  font-family: 'Titillium Web', bebas-neue, sans-serif !important;
+}
+
 .container {
   max-width: 1400px !important;
 }
@@ -435,8 +451,8 @@ header .header .header-nav .header-menu .header-menu-list li a {
   padding: 0 15px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 12px;
+  font-family: bebas-neue, 'Josefin Sans', sans-serif;
+  font-size: 17px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -740,7 +756,7 @@ header .header-slider .pd-none .item .slider-text-content h1 {
 }
 
 header .header-slider .pd-none .item .slider-text-content h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: bebas-neue, 'Josefin Sans', sans-serif;
   color: #fff;
 }
 
@@ -802,7 +818,7 @@ main .offered-services .offered-service-menu .each-service .service-title {
 }
 
 main .offered-services .offered-service-menu .each-service .service-slug {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Josefin Sans', bebas-neue, sans-serif;
   color: #06038d;
 }
 
@@ -905,9 +921,9 @@ main .airport-offers .each-air-offer .air-offer-content .offer-title {
 }
 
 main .airport-offers .each-air-offer .air-offer-content .offer-slug {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: bebas-neue,  'Titillium Web',sans-serif;
   color: #06038d;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 main .flight-offers {
@@ -917,7 +933,7 @@ main .flight-offers {
 
 main .flight-offers .warning {
   padding: 30px 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', bebas-neue, sans-serif;
   text-align: justify;
 }
 
@@ -1063,7 +1079,7 @@ main .flight-offers .owl-flight-offers .item .each-fl-offer .offer-text-content 
 
 main .flight-offers .owl-flight-offers .item .each-fl-offer .offer-text-content .content-description {
   color: #06038d;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', bebas-neue, sans-serif;
 }
 
 main .flight-offers .owl-flight-offers .item .each-fl-offer .content-events:nth-child($i) {
@@ -1290,7 +1306,8 @@ main .flight-package .package-content .package-text {
 
 main .flight-package .package-content .package-text .package-slug {
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+  color: #c6007e;
+  font-family: 'Titillium Web',bebas-neue, sans-serif;
   color: #c6007e;
 }
 
@@ -1340,7 +1357,7 @@ main .flight-package .package-content .package-text .package-btn:hover a {
 
 main .flight-package .package-content .package-text .package-btn a {
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', bebas-neue, sans-serif;
   text-decoration: none;
   font-size: 20px;
   text-transform: capitalize;
@@ -1390,22 +1407,24 @@ main .flight-package .package-content .package-text .package-info .info-text {
 }
 
 main .flight-package .package-content .package-text .package-info .info-text h4 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web',bebas-neue, sans-serif;
   font-size: 13px;
+  color: #040267;
   margin: unset !important;
 }
 
 main .flight-package .package-content .package-text .package-info .info-text h3 {
   font-size: 18px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface',bebas-neue, cursive;
   color: #c6007e;
   margin: unset !important;
 }
 
 main .flight-package .package-content .package-text .package-info .info-text p {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', bebas-neue,sans-serif;
   font-size: 13px;
   margin: unset !important;
+  color: #040267;
 }
 
 main .additional-info {
@@ -1456,7 +1475,7 @@ main .additional-info .each-add-info h1 {
 }
 
 main .additional-info .each-add-info h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web',bebas-neue,  sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   color: #06038d;
@@ -1478,7 +1497,7 @@ main .additional-info .each-add-info .subscribe-btn {
   text-transform: capitalize;
   border: 2px #a6006a solid;
   color: #fff;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: bebas-neue, 'Titillium Web', sans-serif;
   background: #a6006a;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1496,7 +1515,7 @@ footer {
   font-weight: 700;
   color: #fff;
   background-color: #06038d;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', bebas-neue,  cursive;
   font-weight: 300;
   letter-spacing: 1px;
   display: -webkit-box;
