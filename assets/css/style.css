@@ -202,6 +202,12 @@ header .popup .popup-content {
   visibility: hidden;
 }
 
+@media (max-width: 500px) {
+  header .popup .popup-content {
+    padding: 30px 20px;
+  }
+}
+
 header .popup .popup-content .exit-popup {
   width: 100%;
   padding: 15px 30px;
