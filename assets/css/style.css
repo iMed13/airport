@@ -242,11 +242,27 @@ header .popup .popup-content .load-content {
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  header .popup .popup-content .load-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 15px;
+  }
+}
+
 header .popup .popup-content .load-content p {
   font-family: bpg_nino_mtavruli_bold, 'Josefin Sans',ashesha, sans-serif;
   font-size: 30px;
   text-transform: capitalize;
   color: #06038d;
+}
+
+@media (max-width: 500px) {
+  header .popup .popup-content .load-content p {
+    padding-top: 30px;
+  }
 }
 
 header .header-devider {

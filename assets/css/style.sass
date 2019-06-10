@@ -99,11 +99,16 @@ header
         display: flex
         justify-content: space-between
         align-items: center
+        +mobile
+          flex-direction: column
+          padding:  20px 15px
         p
           font-family: bpg_nino_mtavruli_bold, 'Josefin Sans',ashesha, sans-serif
           font-size: 30px
           text-transform: capitalize
           color: #06038d
+          +mobile
+            padding-top: 30px 
 
   .header-devider
     background: #48b2df
