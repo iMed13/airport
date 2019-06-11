@@ -201,6 +201,7 @@ header
               z-index: 98
               justify-content: center
               flex-direction: column
+              
               li
                 min-width: 200px
                 background: #fff
@@ -224,6 +225,37 @@ header
                   background: rgba(0,0,0,0.9)
                   width: 100%
                   height: 100%
+                .language
+                  border-left: 1px solid #201dbc
+                  position: relative
+                  padding: 0 15px
+                  .active-language
+                    &:hover
+                      cursor: pointer
+                  ul
+                    z-index: 999
+                    position: absolute
+                    display: flex
+                    justify-content: center 
+                    flex-direction: column
+                    display: none
+                    transition: transform 0.5s
+                    top: 32px
+                    
+                  .active-ul
+                    display: block !important
+                    li
+                      animation: langimation 1s
+                      transform: translateX(1px) !important
+                      padding: 2px 0
+                    &>:nth-child(3)
+                      animation-delay: 0.7s
+                    &>:nth-child(2)
+                      animation-delay: 0.5s
+                    &>:nth-child(1)
+                      animation-delay: 0.3s
+                        
+
                 li
                     list-style-type: none
                     a

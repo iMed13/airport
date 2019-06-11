@@ -464,6 +464,64 @@ header .header .header-nav .header-menu .header-menu-list {
   }
 }
 
+header .header .header-nav .header-menu .header-menu-list .language {
+  border-left: 1px solid #201dbc;
+  position: relative;
+  padding: 0 15px;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-language:hover {
+  cursor: pointer;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language ul {
+  z-index: 999;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  top: 32px;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-ul {
+  display: block !important;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-ul li {
+  -webkit-animation: langimation 1s;
+          animation: langimation 1s;
+  -webkit-transform: translateX(1px) !important;
+          transform: translateX(1px) !important;
+  padding: 2px 0;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-ul > :nth-child(3) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-ul > :nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+header .header .header-nav .header-menu .header-menu-list .language .active-ul > :nth-child(1) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
 header .header .header-nav .header-menu .header-menu-list li {
   list-style-type: none;
 }

@@ -27,8 +27,15 @@ $(document).ready(function(){
            
         $(".header-hamburg").children().toggleClass("rotate-hamburg");
        }, 500)
-    })
-
+    });
+    $(".active-language").click(function(){
+      $(".language").find("ul").toggleClass("active-ul");
+    });
+    $(".language").find("ul li").click(function(){
+      $(".language").find("ul").toggleClass("active-ul");
+      $(".active-language").attr("src", $(this).children("img").attr("src")); 
+      
+    });
 })
 window.onscroll = function() {scrollFunction()};
 

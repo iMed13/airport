@@ -45,6 +45,11 @@
                 right: -100%;
             }
         }
+        
+        @keyframes langimation {
+            0%{ transform: translateX(10px) !important }
+            100%{ transform: translateX(0px) !important }
+        }
     </style>
 </head>
 
@@ -79,9 +84,18 @@
                         <li><a href="">information</a></li>
                         <li><a href="">check in - bookings</a></li>
                         <li><a href="">sing in</a></li>
+                        <li class="language">
+                            <img src="assets/img/eng.png" alt="active-language" class="active-language">
+                            <ul>
+                                <li><img src="assets/img/geo.png" alt=""></li>
+                                <li><img src="assets/img/eng.png" alt=""></li>
+                                <li><img src="assets/img/rus.png" alt=""></li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="header-hamburg">
-                        <div class="hamburg-line"></div>
+                            <div class="hamburg-line"></div>
+                        
                     </div>
                 </section>
             </nav>
