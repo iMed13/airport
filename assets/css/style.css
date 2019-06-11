@@ -304,12 +304,14 @@ header .header-resp {
   left: 0;
   top: 0;
   z-index: 999;
+  -webkit-animation: header-resp 1s;
+          animation: header-resp 1s;
 }
 
 header .header {
   background: #06038d;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .header .header-nav {

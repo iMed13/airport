@@ -16,14 +16,10 @@
 
     <script src="https://kit.fontawesome.com/9cced2804a.js"></script>
     <style>
-        
+       <style>
         @font-face {
             font-family: bebas-neue;
             src: url(assets/fonts/bebas-neue-regular.otf);
-        }
-        @font-face {
-            font-family: bpg_nino_mtavruli_bold;
-            src: url(assets/fonts/bpg_nino_mtavruli_bold.otf);
         }
         @keyframes mymove {
             0% {
@@ -50,6 +46,17 @@
                 left: 100%;
                 right: -100%;
             }
+        }
+        
+        @keyframes langimation {
+            0%{ transform: translateX(10px) !important }
+            100%{ transform: translateX(0px) !important }
+        }
+        
+        @keyframes header-resp {
+            
+            0%{ transform: translateY(-50px) }
+            100%{ transform: translateY(0px) !important }
         }
     </style>
 </head>
@@ -85,6 +92,14 @@
                         <li><a href="">ინფორმაცია</a></li>
                         <li><a href="">რეგისტრაცია და ჯავშნები</a></li>
                         <li><a href="">ავტორიზაცია</a></li>
+                        <li class="language">
+                                <img src="assets/img/eng.png" alt="active-language" class="active-language">
+                                <ul>
+                                    <li><img src="assets/img/geo.png" alt=""></li>
+                                    <li><img src="assets/img/eng.png" alt=""></li>
+                                    <li><img src="assets/img/rus.png" alt=""></li>
+                                </ul>
+                            </li>
                     </ul>
                     <div class="header-hamburg">
                         <div class="hamburg-line"></div>
