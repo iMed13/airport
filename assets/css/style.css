@@ -509,6 +509,10 @@ header .header .header-nav .header-menu .header-menu-list .language .active-ul l
   padding: 2px 0;
 }
 
+header .header .header-nav .header-menu .header-menu-list .language .active-ul li a {
+  padding: unset !important;
+}
+
 header .header .header-nav .header-menu .header-menu-list .language .active-ul > :nth-child(3) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;

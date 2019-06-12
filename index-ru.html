@@ -20,6 +20,7 @@
             font-family: bebas-neue;
             src: url(assets/fonts/bebas-neue-regular.otf);
         }
+
         @keyframes mymove {
             0% {
                 transform: translateY(60px);
@@ -46,16 +47,26 @@
                 right: -100%;
             }
         }
-        
+
         @keyframes langimation {
-            0%{ transform: translateX(10px) !important }
-            100%{ transform: translateX(0px) !important }
+            0% {
+                transform: translateX(10px) !important
+            }
+
+            100% {
+                transform: translateX(0px) !important
+            }
         }
-        
+
         @keyframes header-resp {
-            
-            0%{ transform: translateY(-50px) }
-            100%{ transform: translateY(0px) !important }
+
+            0% {
+                transform: translateY(-50px)
+            }
+
+            100% {
+                transform: translateY(0px) !important
+            }
         }
     </style>
 </head>
@@ -76,7 +87,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <p>დაემატება მალე . . .</p>
+                    <p>Скоро будет добавлено . . .</p>
                 </div>
             </article>
         </section>
@@ -87,18 +98,18 @@
                 </section>
                 <section class="header-menu">
                     <ul class="header-menu-list">
-                        <li><a href="">გეგმა</a></li>
-                        <li><a href="">ინფორმაცია</a></li>
-                        <li><a href="">რეგისტრაცია და ჯავშნები</a></li>
-                        <li><a href="">ავტორიზაცია</a></li>
+                        <li><a href="">Планирование</a></li>
+                        <li><a href="">Информация</a></li>
+                        <li><a href="">Регистрация и заявки на бронирование</a></li>
+                        <li><a href="">Войти</a></li>
                         <li class="language">
-                                <img src="assets/img/geo.png" alt="active-language" class="active-language">
-                                <ul>
-                                    <li><a href="#"><img src="assets/img/geo.png" alt=""></a></li>
-                                    <li><a href="index.html"><img src="assets/img/eng.png" alt=""></a></li>
-                                    <li><a href="index-ru.html"><img src="assets/img/rus.png" alt=""></a></li>
-                                </ul>
-                            </li>
+                            <img src="assets/img/rus.png" alt="active-language" class="active-language">
+                            <ul>
+                                <li><a href="index-ge.html"><img src="assets/img/geo.png" alt=""></a></li>
+                                <li><a href="index.html"><img src="assets/img/eng.png" alt=""></a></li>
+                                <li><a href="#"><img src="assets/img/rus.png" alt=""></a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="header-hamburg">
                         <div class="hamburg-line"></div>
@@ -118,35 +129,35 @@
                         </div>
                         <div class="form-btn-content form-active">
                             <div class="booking-trip-way">
-                                <input type="text" class="form-input origin" placeholder="გამგზავრები ადგილი">
-                                <input type="text" class="form-input destination" placeholder="დანიშნულების ადგილი">
+                                <input type="text" class="form-input origin" placeholder="Пункт вылета">
+                                <input type="text" class="form-input destination" placeholder="Пункт назначения">
                             </div>
                             <div class="booking-trip-date">
                                 <div>
-                                    <label for="">გამგზავრება</label>
+                                    <label for="">Вылет</label>
                                     <input type="date" id="departureDate" class="form-input">
                                 </div>
                                 <div>
-                                    <label for="">დაბრუნება</label>
+                                    <label for="">Обратный рейс</label>
                                     <input type="date" id="returnDate" class="form-input">
                                 </div>
                             </div>
                             <div class="booking-trip-passengers">
                                 <div>
                                     <div class="input-group mb-2 ">
-                                        <input type="number" class="form-input" placeholder="ზრდასრული">
+                                        <input type="number" class="form-input" placeholder="взрослый">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fas fa-restroom"></i></div>
                                         </div>
                                     </div>
                                     <div class="input-group mb-2 ">
-                                        <input type="number" class="form-input" placeholder="ბავშვი">
+                                        <input type="number" class="form-input" placeholder="ребенок">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fas fa-child"></i></div>
                                         </div>
                                     </div>
                                     <div class="input-group mb-2 ">
-                                        <input type="number" class="form-input" placeholder="ჩვილი">
+                                        <input type="number" class="form-input" placeholder="младенец">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"><i class="fas fa-baby"></i></div>
                                         </div>
@@ -154,7 +165,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="form-search">ძებნა</button>
+                            <button type="submit" class="form-search">Поиск</button>
 
                         </div>
                     </form>
@@ -204,23 +215,22 @@
 
         </section>
         <section class="header-devider">
-            <span> <a href="#"><i class="fas fa-exclamation-triangle"></i> Attention passengers travelling to/from
-                    Eindhoven until 5 July 2019-> Click here for more information </a></span>
+            <span> <a href="#"><i class="fas fa-exclamation-triangle"></i> Внимание пассажиров, путешествующих в / из Эйндховена до 5 июля 2019 года -> Нажмите здесь для получения дополнительной информации </a></span>
 
         </section>
     </header>
     <main class="container-fluid">
         <!-- -------offered services------------ -->
         <section class="container offered-services">
-            <h1>აღმოაჩინეთ მგზავრობის სხვადასხვა შესაძლებლობა Air George-თან ერთად!</h1>
+            <h1>Исследуйте возможности для путешествий, которые предлагает Air George!</h1>
             <section class="offered-service-menu row ">
                 <div class="each-service col-xl-3 col-lg-6 col-md-12">
                     <div class="service-icon">
                         <img src="assets/img/world.png" alt="">
                     </div>
                     <div class="service-text-content">
-                        <div class="service-title">მგზავრობის დაგეგმვა</div>
-                        <div class="service-slug">აღმოაჩინეთ ახალი საყვარელი ადგილი</div>
+                        <div class="service-title">Инструмент планирования поездк</div>
+                        <div class="service-slug">Откройте для себя новые интересные места</div>
                     </div>
                 </div>
                 <div class="each-service col-xl-3 col-lg-6 col-md-12">
@@ -228,8 +238,8 @@
                         <img src="assets/img/pay-per-click.png" alt="">
                     </div>
                     <div class="service-text-content">
-                        <div class="service-title">ტარიფების ძებნა</div>
-                        <div class="service-slug">ყველა მარშრუტისთვის</div>
+                        <div class="service-title">Поиск авиабилета</div>
+                        <div class="service-slug"> маршрутов</div>
                     </div>
                 </div>
 
@@ -238,8 +248,8 @@
                         <img src="assets/img/maps-and-flags.png" alt="">
                     </div>
                     <div class="service-text-content">
-                        <div class="service-title">მიმართულების რუკა</div>
-                        <div class="service-slug">სხვადასხვა მიმართულება ქვეყნებში</div>
+                        <div class="service-title">Карта направлений</div>
+                        <div class="service-slug">Разные направления в странах</div>
                     </div>
                 </div>
                 <div class="each-service col-xl-3 col-lg-6 col-md-12">
@@ -247,8 +257,8 @@
                         <img src="assets/img/map.png" alt="">
                     </div>
                     <div class="service-text-content">
-                        <div class="service-title">მიმართულებები</div>
-                        <div class="service-slug">მარშრუტების მუდმივად მზარდი ქსელი</div>
+                        <div class="service-title">Направления</div>
+                        <div class="service-slug">Узнайте о новых маршрутах нашей сети</div>
                     </div>
                 </div>
             </section>
@@ -256,7 +266,7 @@
         <!-- ---------Flights Offers----------- -->
         <section class="flight-offers">
             <section class="container">
-                <h1>იაფი ავიაბილეთი**</h1>
+                <h1>Дешевые авиабилеты**</h1>
                 <div class="owl-carousel owl-flight-offers">
                     <div class="item">
                         <div class="each-fl-offer">
@@ -266,8 +276,8 @@
                             <div class="offer-country"><img src="assets/img/Moscow.png" alt="poland" title="poland">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">მოსკოვი</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Москва</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -292,8 +302,8 @@
                             <div class="offer-country"><img src="assets/img/Kiev.png" alt="greece" title="greece">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">კიევი</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Киев</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -318,8 +328,8 @@
                             <div class="offer-country"><img src="assets/img/Aviv.png" alt="poland" title="poland">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">თელ-ავივი</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან** </div>
+                                <div class="content-title">Тель-Авив</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -345,8 +355,8 @@
                             <div class="offer-country"><img src="assets/img/Verona.png" alt="romania" title="romania">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">ვერონა</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Верона</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -369,11 +379,12 @@
                             <div class="offer-image">
                                 <img src="assets/img/Frankfurt.jpg" alt="">
                             </div>
-                            <div class="offer-country"><img src="assets/img/Frankfurt.png" alt="romania" title="romania">
+                            <div class="offer-country"><img src="assets/img/Frankfurt.png" alt="romania"
+                                    title="romania">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">ფრანკფურტი</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Франкфурт</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -399,8 +410,8 @@
                             <div class="offer-country"><img src="assets/img/romania.png" alt="romania" title="romania">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">ბრატისლავა</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Братислава</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -426,8 +437,8 @@
                             <div class="offer-country"><img src="assets/img/Riga.png" alt="romania" title="romania">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">რიგა</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Рига</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -444,7 +455,7 @@
 
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="each-fl-offer">
                             <div class="offer-image">
@@ -453,8 +464,8 @@
                             <div class="offer-country"><img src="assets/img/greece.png" alt="romania" title="romania">
                             </div>
                             <div class="offer-text-content">
-                                <div class="content-title">ათენი</div>
-                                <div class="content-description">  იაფი ავიაბილეთები ქუთაისიდან**  </div>
+                                <div class="content-title">Афины</div>
+                                <div class="content-description"> Дешевые авиабилеты из Кутаиси ** </div>
                                 <div class="content-others">
                                     <div class="content-events">
                                         <i class="fas fa-city"></i>
@@ -472,24 +483,23 @@
                         </div>
                     </div>
                 </div>
-                <p class="warning">***Flights on and after 1 November 2018: One way price including taxes,
-                    administration and other non-optional charges and one carry-on bag (max: 40x30x20cm). Trolley bag
-                    and each piece of checked-in baggage is subject to additional fees. The price applies only to
-                    bookings made on Air George and the Air George mobile app. Number of seats at indicated prices are
-                    limited.</p>
+                <p class="warning">*** Полеты 1 ноября 2018 года и после этой даты: цена в одну сторону, включая налоги, административные и другие дополнительные расходы и одна ручная сумка (макс.
+                    40x30x20 см). Сумка для тележки  и за каждое место зарегистрированного багажа взимается дополнительная плата.
+                    Цена распространяется только на заказы на Air George и мобильное приложение Air George. Количество мест по
+                    указанным ценам ограничено.</p>
             </section>
 
             <!-- ---------Airport Offers----------- -->
             <section class="airport-offers">
                 <section class="container">
-                    <h1>თავად შეარჩიეთ სასურველი შემოთავაზებები</h1>
+                    <h1>Выберите понравившиеся предложения</h1>
                     <section class="row">
                         <article class="col-lg-3 col-md-6 col-sm-12">
                             <div class="each-air-offer">
                                 <img src="assets/img/bus.jpg" alt="">
                                 <div class="air-offer-content ">
-                                    <div class="offer-title">ტრანსფერი აეროპორტ(იდან/ში)</div>
-                                    <div class="offer-slug">100-ზე მეტი მარშრუტი. ფასები იწყება კაცზე 2€-დან.</div>
+                                    <div class="offer-title">Трансферы в/из аэропорта</div>
+                                    <div class="offer-slug">Свыше 100 маршрутов, цены от 2 евро за человека.</div>
                                 </div>
                                 <button>
                                     <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
@@ -500,8 +510,8 @@
                             <div class="each-air-offer">
                                 <img src="assets/img/parking.jpg" alt="">
                                 <div class="air-offer-content ">
-                                    <div class="offer-title">აეროპორტის პარკინგი</div>
-                                    <div class="offer-slug">დაზოგეთ 60%-მდე — დაჯავშნეთ ახლავე!</div>
+                                    <div class="offer-title">Стоянка в аэропорту</div>
+                                    <div class="offer-slug">Сэкономьте до 60% - Бронируйте сейчас!</div>
                                 </div>
                                 <button>
                                     <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
@@ -512,8 +522,8 @@
                             <div class="each-air-offer">
                                 <img src="assets/img/Voucher.jpg" alt="">
                                 <div class="air-offer-content ">
-                                    <div class="offer-title">სასაჩუქრე ვაუჩერი</div>
-                                    <div class="offer-slug">გააოცეთ საყვარელი ადამიანები დაუვიწყარი საჩუქრით!
+                                    <div class="offer-title">ПОДАРОЧНЫЙ ВАУЧЕР</div>
+                                    <div class="offer-slug">Порадуйте близких незабываемым подарком!
                                     </div>
                                 </div>
                                 <button>
@@ -525,8 +535,9 @@
                             <div class="each-air-offer">
                                 <img src="assets/img/atraction.jpg" alt="">
                                 <div class="air-offer-content ">
-                                    <div class="offer-title">ახლავე დაჯავშნეთ ტურები და ღირსშესანიშნავი ადგილების ბილეთები</div>
-                                    <div class="offer-slug">აიცილეთ თავიდან გრძელი რიგები. საუკეთესო ფასი გარანტირებულია.</div>
+                                    <div class="offer-title">Забронируйте туры и билеты на экскурсии по достопримечательностям сейчас</div>
+                                    <div class="offer-slug">Не стойте в очередях. Гарантия лучшей цены.
+                                    </div>
                                 </div>
                                 <button>
                                     <a href="#" class="offer-more-info"><i class="fas fa-external-link-alt"></i></a>
@@ -540,7 +551,7 @@
             <!-- ---------Flights Package----------- -->
             <section class="flight-package">
                 <section class="container">
-                    <h1>მოგესალმებით შესაძლებლობების სამყაროში</h1>
+                    <h1>Мир, полный возможностей</h1>
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="each-package">
@@ -549,12 +560,12 @@
                             <div class="package-content">
                                 <div class="package-title">Basic</div>
                                 <div class="package-text">
-                                    <div class="package-slug"> იმგზავრე მსუბუქად </div>
+                                    <div class="package-slug"> ПУТЕШЕСТВУЙТЕ НАЛЕГКЕ </div>
                                     <div class="package-contain">
                                         <i class="fas fa-suitcase-rolling"></i>
                                         <i class="fas fa-calendar-alt"></i>
                                     </div>
-                                    <button class="package-btn"><a href="#">გაეცანი ვრცლად</a></button>
+                                    <button class="package-btn"><a href="#"> Подробнее </a></button>
                                 </div>
                             </div>
                         </div>
@@ -564,7 +575,7 @@
                                 <div class="package-content">
                                     <div class="package-title">Standart</div>
                                     <div class="package-text">
-                                        <div class="package-slug"> იმგზავრეტ ბარგით და დაზოგეთ </div>
+                                        <div class="package-slug">  УПАКОВАТЬ И СОХРАНИТЬ  </div>
                                         <div class="package-contain">
                                             <i class="fas fa-shopping-bag"></i>
                                             <i class="fas fa-suitcase"></i>
@@ -577,12 +588,12 @@
                                         <div class="package-info">
                                             <i class="fas fa-users"></i>
                                             <div class="info-text">
-                                                <h4>ბავშვებთან ერთად მგზავრობთ?</h4>
-                                                <h3>'Standart' პაკეტი ოჯახისთვის</h3>
-                                                <p>ბავშვებთან ერთად მგზავრობის შემთხვევაში, ჩვენ შემოგთავაზებთ უკეთეს ფასს</p>
+                                                <h4>Путешествуете с детьми?</h4>
+                                                <h3>Семейный  'Standart' </h3>
+                                                <p>Пассажирам с детьми доступны более выгодные цены</p>
                                             </div>
                                         </div>
-                                        <button class="package-btn"><a href="#">გაეცანი ვრცლად</a></button>
+                                        <button class="package-btn"><a href="#"> Подробнее </a></button>
                                     </div>
 
                                 </div>
@@ -594,7 +605,7 @@
                                 <div class="package-content">
                                     <div class="package-title">Plus</div>
                                     <div class="package-text">
-                                        <div class="package-slug">  ყველაფრისმომცველი და სრულიად მოქნილი  </div>
+                                        <div class="package-slug"> ყველაფრისმომცველი და სრულიად მოქნილი </div>
                                         <div class="package-contain">
                                             <i class="fas fa-shopping-bag"></i>
                                             <i class="fas fa-suitcase"></i>
@@ -609,12 +620,12 @@
                                         <div class="package-info">
                                             <i class="fas fa-users"></i>
                                             <div class="info-text">
-                                                    <h4>ბავშვებთან ერთად მგზავრობთ?</h4>
-                                                    <h3>'Plus' პაკეტი ოჯახისთვის</h3>
-                                                    <p>ბავშვებთან ერთად მგზავრობის შემთხვევაში, ჩვენ შემოგთავაზებთ უკეთეს ფასს</p>
-                                                </div>
+                                                <h4>Путешествуете с детьми?</h4>
+                                                <h3>Семейный  'Plus'</h3>
+                                                <p>Пассажирам с детьми доступны более выгодные цены</p>
                                             </div>
-                                            <button class="package-btn"><a href="#">გაეცანი ვრცლად</a></button>
+                                        </div>
+                                        <button class="package-btn"><a href="#"> Подробнее </a></button>
                                     </div>
 
                                 </div>
@@ -622,11 +633,7 @@
                         </div>
                     </div>
                     </div>
-                    <p class="warning">*Spend at least € 50 at Heinemann Duty Free and get a € 4.50 voucher for the
-                            Air George Café on board. Or spend € 75 for a € 7.50 voucher.
-                            The minimum purchase excludes duty-paid cigarettes and tobacco products. The coupon is valid on
-                            flights departing from Vienna Airport, until 2 a.m. on the following day. For more information
-                            visit</p>
+                    <p class="warning">* Потратьте не менее 50 евро в Heinemann Duty Free и получите ваучер на 4,5 евро для кафе Air George на борту. Или потратить 75 евро на ваучер на 7,50 евро. Минимальная покупка не включает пошлины на сигареты и табачные изделия. Купон действителен на рейсах, вылетающих из аэропорта Вены, до 2 часов ночи следующего дня. Для получения дополнительной информации посетите</p>
                 </section>
 
             </section>
@@ -637,21 +644,21 @@
                     <section class="row additional-row">
                         <article class="col-lg-4">
                             <div class="each-add-info">
-                                <h1>გჭირდება დახმარება?</h1>
-                                <h3><a href="#">დაათვალიერეთ ჩვენი კითხვა-პასუხის სექცია და მიიღეთ პასუხები მყისიერად</a></h3>
+                                <h1>Нужна помощь?</h1>
+                                <h3><a href="#">Изучите наш раздел «Вопросы и ответы», где можно найти ответы на многие вопросы</a></h3>
                             </div>
                         </article>
                         <article class="col-lg-4">
                             <div class="each-add-info">
-                                <h1>ხშირად გადაადგილდებით?</h1>
-                                <h3> Air George-ის იაფი ავიაბილეთის დაჯავშნა არასოდეს ყოფილა ისეთი მარტივი, როგორიც ჩვენი უფასო მობილური აპლიკაციითაა.</h3>
+                                <h1>Бронируете на ходу?</h1>
+                                <h3> Забронировать дешевый авиабилет Air George проще простого, если у вас есть БЕСПЛАТНОЕ мобильное приложение.</h3>
                             </div>
                         </article>
                         <article class="col-lg-4">
                             <div class="each-add-info">
-                                <h1>არ გამოტოვოთ შემოთავაზებები</h1>
-                                <h3>გამოიწერეთ ჩვენი საინფორმაციო ბიულეტენი და ერთ-ერთმა პირველმა შეიტყვეთ ახალი მარშრუტებისა და სპეციალური შემოთავაზებების შესახებ.</h3>
-                                <button class="subscribe-btn">გამოიწერე</button>
+                                <h1>Не пропускайте спецпредложения</h1>
+                                <h3>Подпишитесь на нашу новостную рассылку и узнавайте о новых маршрутах и специальных предложениях в числе первых.</h3>
+                                <button class="subscribe-btn">Подписаться</button>
                             </div>
                         </article>
                     </section>
@@ -660,7 +667,7 @@
     </main>
     <footer class="container-fluid">
         <section class="container">
-            <span>Air George - ყველა უფლება დაცულია - © 2018-2109</span>
+            <span>Air George - Все права защищены - © 2018-2109</span>
         </section>
     </footer>
 

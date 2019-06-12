@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("button, a").click(function(event){
+  $("button").click(function(event){
     event.preventDefault();
     $(".popup").addClass("active-popup");
     setTimeout(function(){
